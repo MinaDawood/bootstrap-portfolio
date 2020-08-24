@@ -1,0 +1,118 @@
+// Main Classes
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Playfair Display', serif;
+}
+.bg-black {
+  background-color: #000;
+}
+.fa-caret-left {
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+}
+.fa-caret-right {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+}
+.fa-caret-left,
+.fa-caret-right {
+  transition: all 0.2s ease-in;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 40px;
+  height: 5px;
+  border-radius: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #d3ffa8;
+}
+// Start Header Section Styles
+header {
+  .navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
+// End Header Section Styles
+
+// Start Intro Section Styles
+.intro {
+  min-height: 100vh;
+  color: #fff;
+  hr {
+    width: 30%;
+    float: left;
+    height: 5px;
+  }
+  p {
+    clear: both;
+  }
+}
+// End Intro Section Styles
+
+// Start Top Four Section Styles
+.top-work,
+.full-stack,
+.games,
+.back-end,
+.front-end {
+  .project {
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .img-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all ease 0.5s;
+      a {
+        color: #fff;
+        font-size: 1.3rem;
+        transform: translateY(10px);
+        transition: all ease-in-out 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    h4 {
+      color: #fff;
+    }
+    &:hover {
+      .img-overlay {
+        opacity: 1;
+      }
+      a {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+// End Top Four Section Styles
+
+/* Start Scroll to top button Styles*/
+.scroll-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+}
